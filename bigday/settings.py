@@ -139,7 +139,7 @@ DEFAULT_WEDDING_REPLY_EMAIL = DEFAULT_WEDDING_EMAIL # change to 'address@domain.
 # the location of your wedding
 WEDDING_LOCATION = 'Regina, Saskatchewan'
 # the date of your wedding
-WEDDING_DATE = 'August 23rd, 2023'
+WEDDING_DATE = 'August 26th, 2023'
 
 # when sending test emails it will use this address
 DEFAULT_WEDDING_TEST_EMAIL = DEFAULT_WEDDING_FROM_EMAIL
