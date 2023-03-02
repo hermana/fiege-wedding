@@ -23,7 +23,7 @@ SAVE_THE_DATE_CONTEXT_MAP = {
         'kirk_looking_up_formal': {
             'title': 'kirk_looking_up_formal',
             'header_filename': 'hearts.png',
-            'main_image': 'kirk_looking_up_at_me_formal.jpg',
+            'main_image': 'kirk_looking_at_me_formal.jpg',
             'main_color': '#330033',
             'font_color': '#ffffff'
         },
@@ -70,6 +70,8 @@ def send_all_save_the_dates(test_only=False, mark_as_sent=False):
 def send_save_the_date_to_party(party, test_only=False):
     context = get_save_the_date_context(get_template_id_from_party(party))
     recipients = party.guest_emails
+    print("the emails were sent here:")
+    print(recipients)
     if not recipients:
         print('===== WARNING: no valid email addresses found for {} ====='.format(party))
     else:
@@ -91,8 +93,10 @@ def get_template_id_from_party(party):
 
 def get_save_the_date_context(template_id):
     template_id = (template_id or '').lower()
+    print('the template id:')
+    print(template_id)
     if template_id not in SAVE_THE_DATE_CONTEXT_MAP:
-        template_id = 'lions-head'
+        template_id = 'formal_looking_up'
     context = copy(SAVE_THE_DATE_CONTEXT_MAP[template_id])
     context['name'] = template_id
     context['rsvp_address'] = settings.DEFAULT_WEDDING_REPLY_EMAIL
