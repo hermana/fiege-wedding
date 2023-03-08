@@ -131,8 +131,9 @@ def send_save_the_date_email(context, recipients, test_only=False):
             msg.attach(msg_img)
 
     print('sending {} to {}'.format(context['name'], ', '.join(recipients)))
+    print(test_only)
     if not test_only:
-        msg.send()
+        msg.send(fail_silently=False)
 
 
 def clear_all_save_the_dates():

@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u7!-y4k1c6b44q507nr_l+c^12o7ur++cpzyn!$65w^!gum@h%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -131,26 +131,27 @@ STATICFILES_DIRS = (
 # This is used in a few places where the names of the couple are used
 BRIDE_AND_GROOM = 'Kirk and Ashley'
 # base address for all emails
-DEFAULT_WEDDING_EMAIL = 'ashleyherman0@outlook.com'
+DEFAULT_WEDDING_EMAIL = 'aeherman@gmail.com'
 # the address your emails (save the dates/invites/etc.) will come from
 DEFAULT_WEDDING_FROM_EMAIL = BRIDE_AND_GROOM + ' <' + DEFAULT_WEDDING_EMAIL + '>' # change to 'address@domain.tld'
 # the default reply-to of your emails
-DEFAULT_WEDDING_REPLY_EMAIL = 'ashleyherman0@outlook.com' # FIXME:change this
+DEFAULT_WEDDING_REPLY_EMAIL = 'aeherman@gmail.com' # FIXME:change this
 # the location of your wedding
 WEDDING_LOCATION = 'Regina, Saskatchewan'
 # the date of your wedding
 WEDDING_DATE = 'August 26th, 2023'
 
 # when sending test emails it will use this address
-DEFAULT_WEDDING_TEST_EMAIL = 'ashleyherman0@outlook.com'
+DEFAULT_WEDDING_TEST_EMAIL = 'aeherman@gmail.com'
 
 
 # This is used in links in save the date / invitations
-WEDDING_WEBSITE_URL = 'https://thehappycouple.com'
+WEDDING_WEBSITE_URL = 'https://gettinfiegewithit.com'
 WEDDING_CC_LIST = []  # put email addresses here if you want to cc someone on all your invitations
 
 # change to a real email backend in production
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 try:
     from .localsettings import *
