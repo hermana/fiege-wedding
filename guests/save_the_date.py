@@ -17,43 +17,49 @@ SAVE_THE_DATE_CONTEXT_MAP = {
             'title': "formal_looking_up",
             'header_filename': 'hearts.png',
             'main_image': 'looking_up_angled_formal.jpg',
-            'main_color': '#fff3e8',
-            'font_color': '#666666'
+            # 'main_color': '#73a4bf',
+            'main_color': '#ffffff',
+            'font_color': '#000000'
         },
         'kirk_looking_up_formal': {
             'title': 'kirk_looking_up_formal',
             'header_filename': 'hearts.png',
             'main_image': 'kirk_looking_at_me_formal.jpg',
-            'main_color': '#330033',
-            'font_color': '#ffffff'
+            #'main_color': '#73a4bf',
+            'main_color': '#ffffff',
+            'font_color': '#000000'
         },
         'weird_helicopter': {
             'title': 'weird_helicopter',
             'header_filename': 'hearts.png',
             'main_image': 'weird_helicopter_formal.jpg',
-            'main_color': '#ea2e2e',
-            'font_color': '#e5ddd9'
+            # 'main_color': '#73a4bf',
+            'main_color': '#ffffff',
+            'font_color': '#000000'
         },
         'behind_hug': {
             'title': 'behind_hug',
             'header_filename': 'hearts.png',
             'main_image': 'behind_hug_casual.jpg',
-            'main_color': '#b6ccb5',
+            # 'main_color': '#9b6952',
+            'main_color': '#ffffff',
             'font_color': '#000000'
         },
         'laughing_skating_casual': {
             'title': 'laughing_skating_casual',
             'header_filename': 'hearts.png',
             'main_image': 'laughing_skating_casual.jpg',
-            'main_color': '#b4e6ff',
+            # 'main_color': '#9b6952',
+            'main_color': '#ffffff',
             'font_color': '#000000'
         },
         'kirk_behind': {
             'title': 'kirk_behind',
             'header_filename': 'hearts.png',
             'main_image': 'kirk_behind_casual.jpg',
-            'main_color': '#003d71',
-            'font_color': '#d6d6d4'
+            # 'main_color': '#9b6952',
+            'main_color': '#ffffff',
+            'font_color': '#000000'
         }
     }
 
@@ -85,7 +91,7 @@ def send_save_the_date_to_party(party, test_only=False):
 def get_template_id_from_party(party):
     if party.type == 'formal':
         return random.choice(['formal_looking_up', 'kirk_looking_up_formal', 'weird_helicopter'])
-    elif party.type == 'fun':
+    elif party.type == 'casual':
         return random.choice(['behind_hug', 'laughing_skating_casual', 'kirk_behind'])
     else:
         return None
