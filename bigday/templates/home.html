@@ -26,9 +26,9 @@
                     <li>
                         <a class="page-scroll" href="#ceremony">Ceremony</a>
                     </li>
-                    <li>
+                    {% comment %} <li>
                         <a class="page-scroll" href="#where-to-stay">Where to Stay</a>
-                    </li>
+                    </li> {% endcomment %}
                     <li>
                         <a class="page-scroll" href="#other-stuff">Everything Else</a>
                     </li>
@@ -118,9 +118,9 @@
         </div>
     </section>
     {% include 'partials/event.html' %}
-    <section id="where-to-stay">
+    {% comment %} <section id="where-to-stay">
         {% include 'partials/where-to-stay.html' %}
-    </section>
+    </section> {% endcomment %}
     <section id="story" class="bg-dark">
         {% include 'partials/story.html' %}
     </section>

@@ -80,10 +80,15 @@ title:hover {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     font-family: 'Brand', fantasy, cursive, serif;
+}
+
+h4 {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 p {
@@ -272,9 +277,6 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255);
 }
 
-#second-header {
-    background-image: url('../images/chapmans-peak-view.jpg');
-}
 
 @media(min-width:768px) {
     header {
@@ -547,6 +549,7 @@ img::selection {
     color: #fff;
     background: 0 0;
 }
+
 
 img::-moz-selection {
     color: #fff;
