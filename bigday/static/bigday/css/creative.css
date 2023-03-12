@@ -55,6 +55,18 @@ title:hover {
     color: #a9a9a9
 }
 
+.karla {
+    font-family: 'Karla', sans-serif;
+    font-size:24px;
+}
+
+.spaced {
+    padding-bottom:20px;
+}
+
+.sm-spaced {
+    padding-bottom:10px;
+}
 
 .bg-info {
     /* background-color: #b0E2fd; */
@@ -91,10 +103,16 @@ p {
     font-weight: bold;
 }
 
+a.bg-dark:hover {
+    color: slategrey
+}
+
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #264e57;
 }
+
+
 
 .text-faded {
     color: rgba(255,255,255,.7);
@@ -102,6 +120,10 @@ p {
 
 section {
     padding: 50px 0;
+}
+
+.light-section {
+    background-color: #fcf3c0;
 }
 
 aside {
