@@ -146,7 +146,7 @@ DEFAULT_WEDDING_TEST_EMAIL = 'kirkandashleyaregettingmarried@gmail.com'
 
 
 # This is used in links in save the date / invitations
-WEDDING_WEBSITE_URL = 'https://gettinfiggywithit.ca'
+WEDDING_WEBSITE_URL = 'https://gettingfiggywithit.dev'
 WEDDING_CC_LIST = []  # put email addresses here if you want to cc someone on all your invitations
 
 # change to a real email backend in production
