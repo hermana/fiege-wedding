@@ -84,7 +84,7 @@
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    The Event
+                                    Proposal
                                 </div>
                             </div>
                         </div>
@@ -92,11 +92,11 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#story" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/proposal.jpg' %}" class="img-responsive" alt="">
+                        <img src="{% static 'bigday/images/josie_and_kira.png' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Our Story
+                                    Hooligans
                                 </div>
                             </div>
                         </div>
@@ -104,11 +104,11 @@
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <a href="#story" class="portfolio-box page-scroll">
-                        <img src="{% static 'bigday/images/proposal.jpg' %}" class="img-responsive" alt="">
+                        <img src="{% static 'bigday/images/kiss_at_market.png' %}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-name">
-                                    Our Story
+                                    Travel
                                 </div>
                             </div>
                         </div>
@@ -121,16 +121,16 @@
     {% comment %} <section id="where-to-stay">
         {% include 'partials/where-to-stay.html' %}
     </section> {% endcomment %}
-    <section id="story" class="bg-dark">
+    {% comment %} <section id="story" class="light-section">
         {% include 'partials/story.html' %}
-    </section>
-    <section>
+    </section> {% endcomment %}
+    <section class="light-section">
     {% include 'partials/proposal.html' %}
     </section>
-    <section>
+    <section class="light-section">
         {% include 'partials/wedding-party.html' %}
     </section>
-    <section id="gifts">
+    <section id="gifts" class="light-section">
         {% include 'partials/gifts.html' %}
     </section>
     <section id="contact" class="bg-dark">

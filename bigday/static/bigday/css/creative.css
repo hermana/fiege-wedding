@@ -85,8 +85,13 @@ h6 {
     font-family: 'Brand', fantasy, cursive, serif;
 }
 
+h3 {
+    font-family: 'Brand',serif;
+    font-size:30px;
+}
+
 h4 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'karla', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
