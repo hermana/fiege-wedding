@@ -30,7 +30,10 @@
                         <a class="page-scroll" href="#where-to-stay">Where to Stay</a>
                     </li> {% endcomment %}
                     <li>
-                        <a class="page-scroll" href="#other-stuff">Everything Else</a>
+                        <a class="page-scroll" href="#proposal">Proposal Story</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#wedding-party">Wedding Party</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -124,10 +127,21 @@
     {% comment %} <section id="story" class="light-section">
         {% include 'partials/story.html' %}
     </section> {% endcomment %}
-    <section class="light-section">
+    <section class="no-padding" id="navigation">
+        <div class="container-fluid px-0">
+            <div class="row no-gutter light-section">
+                <div class="col">
+                    <a href="#event" class="page-scroll">
+                        <img src="{% static 'bigday/images/skating-wide.png' %}" class="wide img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proposal" class="light-section">
     {% include 'partials/proposal.html' %}
     </section>
-    <section class="light-section">
+    <section id="wedding-party" class="light-section">
         {% include 'partials/wedding-party.html' %}
     </section>
     <section id="gifts" class="light-section">
@@ -137,13 +151,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Contact us!</h2>
+                    <h2 class="section-heading">Contact us</h2>
                     <hr class="primary">
                     <p>If you have any questions don't hesitate to reach out!</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
+                    <p><a class="light-link" href="mailto:{{ support_email }}">{{ support_email }}</a></p>
                 </div>
             </div>
         </div>

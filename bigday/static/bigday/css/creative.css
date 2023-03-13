@@ -113,6 +113,7 @@ p {
     font-weight: bold;
 }
 
+a.bg-dark:hover,
 a.bg-dark:hover {
     color: slategrey
 }
@@ -122,7 +123,21 @@ a.bg-dark:hover {
     background-color: #264e57;
 }
 
+.light-link{
+    color:#fff;
+}
 
+.light-link:hover{
+    color: slategrey
+}
+
+
+
+img.wide {
+    object-fit: cover;
+    width:100vw;
+    align-items: center;
+}
 
 .text-faded {
     color: rgba(255,255,255,.7);
