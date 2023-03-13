@@ -28,7 +28,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'gettingfiggywithit.dev',
     'www.gettingfiggywithit.dev'
-    
 ]
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
