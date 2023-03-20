@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'gettingfiggywithit.dev',
-    'www.gettingfiggywithit.dev'
+    'www.gettingfiggywithit.dev',
+    'localhost'
 ]
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
@@ -125,7 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_ROOT = 'static_root'
+STATIC_ROOT = 'static'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join('bigday', 'static'),
