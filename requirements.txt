@@ -1,3 +1,4 @@
 django==4.1
 Fabric==1.10.2
+gunicorn
 psycopg2-binary==2.9.3
