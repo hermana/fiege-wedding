@@ -204,6 +204,8 @@ aside {
     background-color: transparent;
 }
 
+
+
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(28,56,81,.3);
@@ -297,6 +299,12 @@ header .header-content .header-content-inner p {
     color: rgba(255,255,255);
 }
 
+/*Styles for Mobile*/
+@media only screen and (min-width: 200px) and (max-width: 767px)  { 
+    #header-title {
+        visibility: hidden;
+    }
+}
 
 @media(min-width:768px) {
     header {
