@@ -28,7 +28,6 @@ DEBUG = False
 ALLOWED_HOSTS = [
     'gettingfiggywithit.dev',
     'www.gettingfiggywithit.dev',
-    '167.99.189.214:8000/',
     '167.99.189.214'
 ]
 
