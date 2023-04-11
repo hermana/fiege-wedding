@@ -151,6 +151,22 @@ section {
     background-color: #fcf3c0;
 }
 
+th,
+td {
+    font-family: "Karla", "sans-serif";
+}
+
+.table-bordered,
+tr {
+    border: 2px solid grey;
+}
+
+.table-bordered>tbody>tr>th,
+.table-bordered>tbody>tr>td {
+    border:0px
+    /* border: 2px solid grey; */
+}
+
 aside {
     padding: 50px 0;
 }
