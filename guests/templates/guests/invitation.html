@@ -12,11 +12,11 @@
         </section>
         <section class="col-md-6 text-center">
             <div id="invitation-details">
-            <h2>Zue and Luk Wedding</h2>
+            <h2>Kirk and Ashley's Wedding</h2>
             <p class="lead">
-                July 2, 2016, at 4:30 pm<br>
-                Ravine Vineyard<br>
-                Niagara-on-the-Lake, ON, Canada
+                August 26, 2023, at 2:00pm<br>
+                <a href="https://goo.gl/maps/njHE6G9Jd1W8uhr28?coh=178571&entry=tt">T.C. Douglas Building Platform</a><br>
+                Regina, SK, Canada
             </p>
             </div>
         </section>
@@ -37,7 +37,7 @@
                 </label>
                 {% endwith %}
             </div>
-            {% if not guest.is_child %}
+            {% comment %} {% if not guest.is_child %}
             <div class="form-group">
                 {% with 'meal-'|add:guest.unique_id as meal_label %}
                 <label for="{{ meal_label }}" class="col-sm-3 control-label">... and will eat</label>
@@ -48,10 +48,10 @@
                 {% endfor %}
                 {% endwith %}
             </div>
-            {% endif %}
+            {% endif %} {% endcomment %}
             {% endfor %}
             <div class="form-group col-sm-12">
-                <input type="text" name="comments" class="form-control" placeholder="Questions/comments/well wishes" >
+                <input type="text" name="comments" class="form-control" placeholder="Questions or comments" >
             </div>
             <div class="form-group">
                 <div class="text-center">
@@ -62,8 +62,8 @@
         </section>
     </div>
 {% endblock %}
-{% block page_js %}
-    <script src="{% static 'validator.js' %}"></script>
+{% comment %} {% block page_js %} {% endcomment %}
+    {% comment %} <script src="{% static 'validator.js' %}"></script>
     <script>
     $(function () {
         // enable/disable meal choices based on attendance
@@ -95,5 +95,5 @@
             $(document.forms[0]).validator();
         });
     });
-    </script>
-{% endblock %}
+    </script> {% endcomment %}
+{% comment %} {% endblock %} {% endcomment %}
