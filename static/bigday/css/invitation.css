@@ -36,7 +36,8 @@
 
 
 body {
-    background: url('../images/invite-background.jpg') no-repeat center center fixed;
+    /* background: url('../images/invite-background.jpg') no-repeat center center fixed; */
+    background-color: #c6dfec;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
