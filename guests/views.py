@@ -76,6 +76,13 @@ def invitation(request, invite_id):
             guest.is_attending = response.is_attending
             guest.meal = response.meal
             guest.save()
+        if request.POST.get('song_name'):
+            song_name = request.POST.get('song_name')
+            party.song_name = song_name if not party.song_name else '{}; {}'.format(party.song_name, song_name)
+        if request.POST.get('song_artist'):
+            song_artist = request.POST.get('song_artist')
+            party.song_artist = song_artist if not party.song_artist else '{}; {}'.format(party.song_artist, song_artist) 
+        
         if request.POST.get('comments'):
             comments = request.POST.get('comments')
             party.comments = comments if not party.comments else '{}; {}'.format(party.comments, comments)

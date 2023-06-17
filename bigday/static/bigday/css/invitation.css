@@ -37,7 +37,8 @@
 
 body {
     /* background: url('../images/invite-background.jpg') no-repeat center center fixed; */
-    background-color: #c6dfec;
+    /* background-color: #c6dfec; */
+    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,7 +52,7 @@ body {
     margin-bottom: 2em;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 #footer {

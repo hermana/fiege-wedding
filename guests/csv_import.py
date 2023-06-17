@@ -41,7 +41,7 @@ def export_guests():
     headers = [
         'party_name', 'first_name', 'last_name', 'party_type',
         'is_child', 'category', 'is_invited', 'is_attending',
-        'rehearsal_dinner', 'meal', 'email', 'comments'
+        'rehearsal_dinner', 'song_name', 'song_artist', 'email', 'comments'
     ]
     file = io.StringIO()
     writer = csv.writer(file)
@@ -62,6 +62,8 @@ def export_guests():
                     guest.meal,
                     guest.email,
                     party.comments,
+                    party.song_name,
+                    party.song_artist
                 ])
     return file
 

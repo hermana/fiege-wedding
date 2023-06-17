@@ -33,6 +33,8 @@ class Party(models.Model):
     rehearsal_dinner = models.BooleanField(default=False)
     is_attending = models.BooleanField(default=None, null=True)
     comments = models.TextField(null=True, blank=True)
+    song_name = models.TextField(null=True, blank=True)
+    song_artist = models.TextField(null=True, blank=True)
 
     def __str__(self):
         return 'Party: {}'.format(self.name)
