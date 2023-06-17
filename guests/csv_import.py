@@ -59,7 +59,6 @@ def export_guests():
                     party.is_invited,
                     guest.is_attending,
                     party.rehearsal_dinner,
-                    guest.meal,
                     guest.email,
                     party.comments,
                     party.song_name,

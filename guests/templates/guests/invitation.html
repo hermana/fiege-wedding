@@ -37,18 +37,6 @@
                 </label>
                 {% endwith %}
             </div>
-            {% comment %} {% if not guest.is_child %}
-            <div class="form-group">
-                {% with 'meal-'|add:guest.unique_id as meal_label %}
-                <label for="{{ meal_label }}" class="col-sm-3 control-label">... and will eat</label>
-                {% for meal_id, meal_name in meals %}
-                <label class="radio-inline">
-                    <input type="radio" name="{{ meal_label }}" id="{{ meal_label }}-yes" value="{{ meal_id }}" {% if guest.meal == meal_id %}checked="checked"{% endif %} {% if guest.is_attending == False %}disabled{% endif %} required> {{ meal_name }}
-                </label>
-                {% endfor %}
-                {% endwith %}
-            </div>
-            {% endif %} {% endcomment %}
             {% endfor %}
             <div class="form-group col-sm-12">
                 <label>What's a song you'd love to hear at the reception?</label>
@@ -68,38 +56,4 @@
         </section>
     </div>
 {% endblock %}
-{% comment %} {% block page_js %} {% endcomment %}
-    {% comment %} <script src="{% static 'validator.js' %}"></script>
-    <script>
-    $(function () {
-        // enable/disable meal choices based on attendance
-        $("input.attending-radio").change(function (e) {
-            var target = $(e.target);
-            if (target.closest('.form-group').data('is-child') === "True") {
-                // don't attempt to update meals for children, who don't have them.
-                return;
-            }
-            var value = target.attr('value');
-            var mealButtonContainer = target.closest('.form-group').next('.form-group');
-            var mealButtons = mealButtonContainer.find('[type=radio]');
-            if (value === 'yes') {
-                mealButtonContainer.removeClass('text-muted');
-                mealButtons.each(function (index, button) {
-                    button.disabled = false;
-                    button.required = true;
-                });
-            } else if (value === "no") {
-                mealButtonContainer.addClass('text-muted');
-                mealButtons.each(function (index, button) {
-                    button.checked = false;
-                    button.disabled = true;
-                    button.required = false;
-                });
-            }
-            // reload validation
-            $(document.forms[0]).validator('destroy');
-            $(document.forms[0]).validator();
-        });
-    });
-    </script> {% endcomment %}
-{% comment %} {% endblock %} {% endcomment %}
+

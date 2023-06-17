@@ -55,15 +55,6 @@ class Party(models.Model):
     def guest_emails(self):
         return list(filter(None, self.guest_set.values_list('email', flat=True)))
 
-
-MEALS = [
-    ('beef', 'cow'),
-    ('fish', 'fish'),
-    ('hen', 'hen'),
-    ('vegetarian', 'vegetable'),
-]
-
-
 class Guest(models.Model):
     """
     A single guest
@@ -73,7 +64,6 @@ class Guest(models.Model):
     last_name = models.TextField(null=True, blank=True)
     email = models.TextField(null=True, blank=True)
     is_attending = models.BooleanField(default=None, null=True)
-    meal = models.CharField(max_length=20, choices=MEALS, null=True, blank=True)
     is_child = models.BooleanField(default=False)
 
     @property
