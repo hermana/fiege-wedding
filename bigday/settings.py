@@ -23,12 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'u7!-y4k1c6b44q507nr_l+c^12o7ur++cpzyn!$65w^!gum@h%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'gettingfiggywithit.dev',
     'www.gettingfiggywithit.dev',
-    '167.99.189.214'
+    '167.99.189.214',
+    '127.0.0.1'
 ]
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
